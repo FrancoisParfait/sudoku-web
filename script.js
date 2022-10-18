@@ -2,14 +2,6 @@ const container = document.getElementById("container");
 let rows = document.getElementsByClassName("gridRow");
 let cells = document.getElementsByClassName("cell");
 
-grid();
-
-// Create a 9x9 grid
-function grid() {
-    createRow(9);
-    createColumn(9);
-}
-
 function createRow(rowNum) {
     for (let i = 0; i < rowNum; i++) {
         let row = document.createElement("div");
@@ -24,4 +16,12 @@ function createColumn(cellNum) {
             rows[j].appendChild(newCell).className = "cell";
         }
     }
+}
+
+grid();
+
+// Create a 9x9 grid
+function grid() {
+    createRow(9);
+    createColumn(9);
 }
