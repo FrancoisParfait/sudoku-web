@@ -18,10 +18,10 @@ function createColumn(cellNum) {
     }
 }
 
-grid();
-
 // Create a 9x9 grid
 function grid() {
     createRow(9);
     createColumn(9);
 }
+
+grid();
